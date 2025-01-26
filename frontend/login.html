@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+        body main{
+            background-image: url('img/signup-background.jpeg')
+        }
+        body{
+            font-family: "Gill Sans MT";
+        }
+        #result {
+            margin-top: 10px;
+            text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a1a1a;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center fs-3 fw-bold" href="main.html"> <img class="me-2" src="img/logo.png" width="100" />GameEnforcer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end me-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="main.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="my%20games.html">My Library</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="btn btn-success me-2 mb-2" href="#" style="width: 90px;">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-success" href="register.html">Sign Up</a>
+                        </li>
+                      </ul>
+                </div>
+             </div>
+        </nav>
+    </header>
+    <main class="d-flex align-items-center min-vh-100" style="no-repeat center center; background-size: cover;">
+        <div class="mx-auto rounded-4 text-white align-items-center" style="width: 420px; padding: 30px 40px; background: #1a1a1a;">
+            <div class="px-3 py-1">
+                <h1 class="px-3 pt-3 text-center">Sign In</h1>
+                <div class="input-group">
+                    <input id="login-username" type="text" class="form-control mt-4 rounded-3 border border-4 border border-success" name="login" required placeholder="Login or email">
+                </div>
+                <div class="input-group">
+                    <input id="login-password" type="password" class="form-control mt-4 rounded-3 border border-4 border border-success" placeholder="Password" name="password" required>
+                </div>
+                <div class="form-check mt-3">
+                    <label for="remember">
+                        <input class="form-check-input" type="checkbox" id="rememberme"> Remember Me
+                    </label>
+                </div>
+                <div>
+                    <button onclick="login()" class="btn btn-success rounded-4 mt-5 mb-3 w-100 fw-bold" style="height: 45px;">Login</button>
+                </div>
+                <div id="result"></div>
+                <div class="text-center">
+                    <a class="text-white" href="#">Forgot the password?</a>
+                </div>
+                <div class="text-center">
+                    Don't have an account? <a class="text-white" href="register.html">Register here</a>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer style="background-color: #1a1a1a;" class="text-center text-white py-4">
+            <div class="container-fluid">
+                <div class="mb-3">
+                    <a href="#" class="me-3 text-white"><img src="icons/telegram.png" alt="Telegram" style="height: 30px;"></a>
+                    <a href="#" class="me-3 text-white"><img src="icons/twitter.png" alt="Twitter" style="height: 30px;"></a>
+                    <a href="#" class="me-3 text-white"><img src="icons/youtube.png" alt="YouTube" style="height: 30px;"></a>
+                    <a href="#" class="me-3 text-white"><img src="icons/whatsapp.png" alt="WhatsApp" style="height: 30px;"></a>
+                    <a href="#" class="text-white"><img src="icons/instagram.png" alt="Instagram" style="height: 30px;"></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="main.html" class="text-white">Home</a></li>
+                    <li class="list-inline-item"><a href="aboutus.html" class="text-white">About us</a></li>
+                    <li class="list-inline-item"><a href="contacts.html" class="text-white">Contacts</a></li>
+                </ul>
+                <p class="mt-3">&copy; 2024; Designed by Team: Nursultan, Nurbol, Askar</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
